@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import DynamicCoreDataFrameworkPOC
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
+    
+    let newPerson = NSEntityDescription.insertNewObjectForEntityForName("Person", inManagedObjectContext: self.managedObjectContext) as! PersonModel
+    newPerson.firstName = "Prasanna"
+    newPerson.lastName = "R"
+    newPerson.age = 30
+    newPerson.nickName = "Preson"
+    
+    do {
+      try self.managedObjectContext.save()
+    } catch _ {
+    }
+    
+    let fetchRequest = NSFetchRequest(entityName: "Person")
+    let personnel = (try! self.managedObjectContext.executeFetchRequest(fetchRequest)) as! [PersonModel]
+    
+    print(personnel, terminator: "")
+    
     return true
   }
 
@@ -54,8 +72,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   lazy var managedObjectModel: NSManagedObjectModel = {
       // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
-      let modelURL = NSBundle.mainBundle().URLForResource("AppFrameworkPOC", withExtension: "momd")!
-      return NSManagedObjectModel(contentsOfURL: modelURL)!
+//      let modelURL = NSBundle.mainBundle().URLForResource("AppFrameworkPOC", withExtension: "momd")!
+//      return NSManagedObjectModel(contentsOfURL: modelURL)!
+    
+    let carKitBundle = NSBundle(identifier: "com.tarkalabs.DynamicCoreDataFrameworkPOC")
+    
+    let modelURL = carKitBundle!.URLForResource("PersonModel", withExtension: "momd")!
+    return NSManagedObjectModel(contentsOfURL: modelURL)!
+    
   }()
 
   lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator = {

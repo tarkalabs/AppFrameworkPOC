@@ -10,9 +10,10 @@
 		7D3B3DD21CD784F200C17768 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B3DD11CD784F200C17768 /* AppDelegate.swift */; };
 		7D3B3DD41CD784F200C17768 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B3DD31CD784F200C17768 /* ViewController.swift */; };
 		7D3B3DD71CD784F200C17768 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3B3DD51CD784F200C17768 /* Main.storyboard */; };
-		7D3B3DDA1CD784F200C17768 /* AppFrameworkPOC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B3DD81CD784F200C17768 /* AppFrameworkPOC.xcdatamodeld */; };
 		7D3B3DDC1CD784F200C17768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D3B3DDB1CD784F200C17768 /* Assets.xcassets */; };
 		7D3B3DDF1CD784F200C17768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3B3DDD1CD784F200C17768 /* LaunchScreen.storyboard */; };
+		7D3B3DE71CD7859C00C17768 /* Frameworks in Resources */ = {isa = PBXBuildFile; fileRef = 7D3B3DE61CD7859C00C17768 /* Frameworks */; };
+		7D3B3DE91CD7861F00C17768 /* DynamicCoreDataFrameworkPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3B3DE81CD7861F00C17768 /* DynamicCoreDataFrameworkPOC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,11 @@
 		7D3B3DD11CD784F200C17768 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D3B3DD31CD784F200C17768 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D3B3DD61CD784F200C17768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7D3B3DD91CD784F200C17768 /* AppFrameworkPOC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppFrameworkPOC.xcdatamodel; sourceTree = "<group>"; };
 		7D3B3DDB1CD784F200C17768 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D3B3DDE1CD784F200C17768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D3B3DE01CD784F200C17768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D3B3DE61CD7859C00C17768 /* Frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Frameworks; sourceTree = "<group>"; };
+		7D3B3DE81CD7861F00C17768 /* DynamicCoreDataFrameworkPOC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DynamicCoreDataFrameworkPOC.framework; path = AppFrameworkPOC/Frameworks/DynamicCoreDataFrameworkPOC.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D3B3DE91CD7861F00C17768 /* DynamicCoreDataFrameworkPOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 		7D3B3DC51CD784F200C17768 = {
 			isa = PBXGroup;
 			children = (
+				7D3B3DE81CD7861F00C17768 /* DynamicCoreDataFrameworkPOC.framework */,
 				7D3B3DD01CD784F200C17768 /* AppFrameworkPOC */,
 				7D3B3DCF1CD784F200C17768 /* Products */,
 			);
@@ -56,13 +60,13 @@
 		7D3B3DD01CD784F200C17768 /* AppFrameworkPOC */ = {
 			isa = PBXGroup;
 			children = (
+				7D3B3DE61CD7859C00C17768 /* Frameworks */,
 				7D3B3DD11CD784F200C17768 /* AppDelegate.swift */,
 				7D3B3DD31CD784F200C17768 /* ViewController.swift */,
 				7D3B3DD51CD784F200C17768 /* Main.storyboard */,
 				7D3B3DDB1CD784F200C17768 /* Assets.xcassets */,
 				7D3B3DDD1CD784F200C17768 /* LaunchScreen.storyboard */,
 				7D3B3DE01CD784F200C17768 /* Info.plist */,
-				7D3B3DD81CD784F200C17768 /* AppFrameworkPOC.xcdatamodeld */,
 			);
 			path = AppFrameworkPOC;
 			sourceTree = "<group>";
@@ -128,6 +132,7 @@
 				7D3B3DDF1CD784F200C17768 /* LaunchScreen.storyboard in Resources */,
 				7D3B3DDC1CD784F200C17768 /* Assets.xcassets in Resources */,
 				7D3B3DD71CD784F200C17768 /* Main.storyboard in Resources */,
+				7D3B3DE71CD7859C00C17768 /* Frameworks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +144,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D3B3DD41CD784F200C17768 /* ViewController.swift in Sources */,
-				7D3B3DDA1CD784F200C17768 /* AppFrameworkPOC.xcdatamodeld in Sources */,
 				7D3B3DD21CD784F200C17768 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +257,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppFrameworkPOC/Frameworks",
+				);
 				INFOPLIST_FILE = AppFrameworkPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarkalabs.AppFrameworkPOC;
@@ -264,6 +272,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppFrameworkPOC/Frameworks",
+				);
 				INFOPLIST_FILE = AppFrameworkPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarkalabs.AppFrameworkPOC;
@@ -292,19 +304,6 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		7D3B3DD81CD784F200C17768 /* AppFrameworkPOC.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				7D3B3DD91CD784F200C17768 /* AppFrameworkPOC.xcdatamodel */,
-			);
-			currentVersion = 7D3B3DD91CD784F200C17768 /* AppFrameworkPOC.xcdatamodel */;
-			path = AppFrameworkPOC.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 7D3B3DC61CD784F200C17768 /* Project object */;
 }

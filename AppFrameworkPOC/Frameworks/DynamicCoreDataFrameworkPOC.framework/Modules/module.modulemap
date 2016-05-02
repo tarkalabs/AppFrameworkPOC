@@ -1,0 +1,10 @@
+framework module DynamicCoreDataFrameworkPOC {
+  umbrella header "DynamicCoreDataFrameworkPOC.h"
+
+  export *
+  module * { export * }
+}
+
+module DynamicCoreDataFrameworkPOC.Swift {
+    header "DynamicCoreDataFrameworkPOC-Swift.h"
+}
